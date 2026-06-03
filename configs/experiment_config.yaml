@@ -1,0 +1,80 @@
+experiment_name: raw_smoke_real_data_readiness
+
+dataset:
+  name: session_folder_baseline
+  variant: raw_smoke_demo
+  group_column: session_id
+  label_column: label
+  multiclass_label_column: label
+
+paths:
+  data_root: data/raw
+  results_root: results
+  inference_session_dir: data/raw/session_004_developing_fault
+  session_whitelist:
+    - session_001_healthy
+    - session_002_healthy
+    - session_003_developing_fault
+    - session_004_developing_fault
+
+window:
+  duration_sec: 2.0
+  overlap: 0.5
+  minimum_samples:
+    ae: 8
+    vibration: 8
+    thermal: 4
+
+preprocessing:
+  interpolation_method: linear
+  fill_missing: true
+
+synchronization:
+  method: trim_to_overlap
+
+model:
+  classifier:
+    n_estimators: 300
+    random_state: 42
+    max_depth: null
+    min_samples_leaf: 1
+    n_jobs: -1
+    class_weight: balanced
+  anomaly:
+    n_estimators: 200
+    random_state: 42
+    contamination: auto
+    threshold_strategy: quantile
+    threshold_quantile: 0.99
+    threshold_buffer_std: 1.0
+    minimum_healthy_windows: 10
+
+evaluation:
+  healthy_label: healthy
+  test_fraction: 0.25
+  random_state: 42
+  split_strategy: session
+  positive_labels:
+    - developing_fault
+
+plots:
+  top_n_feature_trends: 4
+
+inference:
+  warning_ratio_threshold: 0.2
+
+ablation:
+  enabled: true
+  include_metadata: false
+  include_fusion_features: true
+  setups:
+    ae_only:
+      - ae
+    vibration_only:
+      - vibration
+    thermal_only:
+      - thermal
+    fused:
+      - ae
+      - vibration
+      - thermal

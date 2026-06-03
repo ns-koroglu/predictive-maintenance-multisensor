@@ -1,0 +1,3 @@
+| reported_model_name | n_healthy_train_windows | calibrated_threshold | calibrated_precision | calibrated_recall | calibrated_f1 | calibrated_balanced_accuracy | calibrated_roc_auc | calibrated_pr_auc | recommended_threshold | recommended_precision | recommended_recall | recommended_f1 | recommended_balanced_accuracy | threshold_note |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| isolation_forest | 416 | 0.6131 | 0.8968 | 0.6468 | 0.7515 | 0.5268 | 0.6323 | 0.9475 | 0.6230 | 0.9920 | 0.5245 | 0.6862 | 0.7453 | Recommended threshold is optimistic because it is chosen from the held-out sweep. |

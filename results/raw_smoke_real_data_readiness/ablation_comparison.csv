@@ -1,0 +1,5 @@
+setup_name,sensors,n_features,classifier_precision,classifier_recall,classifier_f1,anomaly_precision,anomaly_recall,anomaly_f1
+ae_only,ae,22,1.0,1.0,1.0,0.0,0.0,0.0
+fused,ae+vibration+thermal,126,1.0,1.0,1.0,1.0,0.8181818181818182,0.9
+thermal_only,thermal,33,1.0,1.0,1.0,0.0,0.0,0.0
+vibration_only,vibration,66,1.0,1.0,1.0,0.0,0.0,0.0

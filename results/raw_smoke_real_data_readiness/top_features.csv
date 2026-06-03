@@ -1,0 +1,11 @@
+feature,importance
+vibration_az_max,0.03333333333333333
+vibration_ax_spec_centroid,0.03
+thermal_t_max_max,0.023333333333333334
+vibration_ay_rms,0.023333333333333334
+vibration_ay_std,0.023333333333333334
+fusion_thermal_to_ae_ratio,0.023333333333333334
+thermal_t_max_start,0.023333333333333334
+thermal_temp_gap_max,0.023333333333333334
+vibration_ay_kurtosis,0.02
+vibration_az_min,0.02

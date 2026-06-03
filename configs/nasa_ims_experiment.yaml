@@ -1,0 +1,43 @@
+experiment_name: nasa_ims_experiment
+
+dataset:
+  name: nasa_ims
+  variant: compact_bearing_progression
+  group_column: group_id
+  label_column: label
+  multiclass_label_column: multiclass_label
+
+run_to_failure:
+  sampling_rate_hz: 20000.0
+  healthy_reference_fraction: 0.2
+  healthy_reference_max_hours: 24.0
+  minimum_reference_files: 12
+  rolling_window_files: 6
+
+paths:
+  data_root: data/external/nasa_ims/extracted
+  processed_root: data/processed
+  results_root: results
+  feature_dataset_path: data/processed/nasa_ims/datasets/nasa_ims_bearing_feature_dataset.csv
+
+model:
+  anomaly:
+    n_estimators: 200
+    random_state: 42
+    contamination: auto
+    one_class_svm_nu: 0.05
+    one_class_svm_kernel: rbf
+    one_class_svm_gamma: scale
+    threshold_strategy: quantile
+    threshold_quantile: 0.99
+    threshold_buffer_std: 1.0
+    minimum_healthy_windows: 10
+
+evaluation:
+  healthy_label: healthy
+  split_strategy: session
+  test_fraction: 0.25
+  random_state: 42
+
+inference:
+  warning_ratio_threshold: 0.6

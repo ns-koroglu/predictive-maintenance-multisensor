@@ -1,0 +1,40 @@
+experiment_name: kaist_rtf_experiment
+
+dataset:
+  name: kaist_run_to_failure
+  variant: compact_hourly_progression
+  group_column: session_id
+  label_column: label
+  multiclass_label_column: multiclass_label
+
+run_to_failure:
+  sampling_rate_hz: 25600.0
+  healthy_reference_fraction: 0.2
+  healthy_reference_max_hours: 24.0
+  minimum_reference_files: 12
+  rolling_window_files: 5
+
+paths:
+  data_root: data/external/kaist_run_to_failure/extracted
+  processed_root: data/processed
+  results_root: results
+  feature_dataset_path: data/processed/kaist_run_to_failure/datasets/kaist_rtf_feature_dataset.csv
+
+model:
+  anomaly:
+    n_estimators: 200
+    random_state: 42
+    contamination: auto
+    threshold_strategy: quantile
+    threshold_quantile: 0.99
+    threshold_buffer_std: 1.0
+    minimum_healthy_windows: 10
+
+evaluation:
+  healthy_label: healthy
+  split_strategy: session
+  test_fraction: 0.25
+  random_state: 42
+
+inference:
+  warning_ratio_threshold: 0.6

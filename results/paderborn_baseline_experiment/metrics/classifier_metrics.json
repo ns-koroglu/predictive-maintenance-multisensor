@@ -1,0 +1,134 @@
+{
+  "labels": [
+    "faulty",
+    "healthy"
+  ],
+  "accuracy": 0.703125,
+  "balanced_accuracy": 0.5916666666666667,
+  "precision_macro": 0.5966820479015601,
+  "recall_macro": 0.5916666666666667,
+  "f1_macro": 0.5938218160440383,
+  "classification_report": {
+    "faulty": {
+      "precision": 0.7947154471544715,
+      "recall": 0.8145833333333333,
+      "f1-score": 0.8045267489711934,
+      "support": 480.0
+    },
+    "healthy": {
+      "precision": 0.39864864864864863,
+      "recall": 0.36875,
+      "f1-score": 0.38311688311688313,
+      "support": 160.0
+    },
+    "accuracy": 0.703125,
+    "macro avg": {
+      "precision": 0.5966820479015601,
+      "recall": 0.5916666666666667,
+      "f1-score": 0.5938218160440383,
+      "support": 640.0
+    },
+    "weighted avg": {
+      "precision": 0.6956987475280159,
+      "recall": 0.703125,
+      "f1-score": 0.6991742825076158,
+      "support": 640.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      391,
+      89
+    ],
+    [
+      101,
+      59
+    ]
+  ],
+  "top_feature_importances": [
+    {
+      "feature": "vibration_vibration_1_mean",
+      "importance": 0.18311443475573946
+    },
+    {
+      "feature": "vibration_vibration_1_spec_bandwidth",
+      "importance": 0.10394065648807992
+    },
+    {
+      "feature": "vibration_vibration_1_bandpower_4",
+      "importance": 0.0855773023851264
+    },
+    {
+      "feature": "vibration_vibration_1_spec_entropy",
+      "importance": 0.07249030530276562
+    },
+    {
+      "feature": "vibration_vibration_1_spec_centroid",
+      "importance": 0.06767008830905176
+    },
+    {
+      "feature": "vibration_vibration_1_zero_crossings",
+      "importance": 0.06350881391879297
+    },
+    {
+      "feature": "vibration_vibration_1_kurtosis",
+      "importance": 0.052015402340409224
+    },
+    {
+      "feature": "vibration_vibration_1_bandpower_2",
+      "importance": 0.04634514587087904
+    },
+    {
+      "feature": "vibration_vibration_1_shape_factor",
+      "importance": 0.04485527904765564
+    },
+    {
+      "feature": "vibration_vibration_1_bandpower_1",
+      "importance": 0.04182360993921772
+    },
+    {
+      "feature": "vibration_vibration_1_rms",
+      "importance": 0.035441393739572974
+    },
+    {
+      "feature": "vibration_vibration_1_bandpower_3",
+      "importance": 0.03191934993574065
+    },
+    {
+      "feature": "vibration_vibration_1_spec_total_power",
+      "importance": 0.029596813424561944
+    },
+    {
+      "feature": "vibration_vibration_1_p2p",
+      "importance": 0.02889808730111566
+    },
+    {
+      "feature": "vibration_vibration_1_std",
+      "importance": 0.025539346789291578
+    },
+    {
+      "feature": "vibration_vibration_1_min",
+      "importance": 0.018804096695383136
+    },
+    {
+      "feature": "vibration_vibration_1_spec_dominant_freq",
+      "importance": 0.017442936721002774
+    },
+    {
+      "feature": "vibration_vibration_1_margin_factor",
+      "importance": 0.015892829777904367
+    },
+    {
+      "feature": "vibration_vibration_1_max",
+      "importance": 0.01327707690078586
+    },
+    {
+      "feature": "vibration_vibration_1_impulse_factor",
+      "importance": 0.009115349856797244
+    }
+  ],
+  "roc_auc": 0.8357552083333333,
+  "pr_auc": 0.9509023300457459,
+  "roc_auc_positive_label": "faulty",
+  "pr_auc_positive_label": "faulty"
+}

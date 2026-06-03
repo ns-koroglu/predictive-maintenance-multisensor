@@ -1,0 +1,2 @@
+accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,roc_auc,pr_auc,roc_auc_positive_label,pr_auc_positive_label
+0.703125,0.5916666666666667,0.5966820479015601,0.5916666666666667,0.5938218160440383,0.8357552083333333,0.9509023300457459,faulty,faulty

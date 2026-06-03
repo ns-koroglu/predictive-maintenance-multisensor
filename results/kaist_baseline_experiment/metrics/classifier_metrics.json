@@ -1,0 +1,134 @@
+{
+  "labels": [
+    "faulty",
+    "healthy"
+  ],
+  "accuracy": 0.888468809073724,
+  "balanced_accuracy": 0.5,
+  "precision_macro": 0.444234404536862,
+  "recall_macro": 0.5,
+  "f1_macro": 0.47047047047047047,
+  "classification_report": {
+    "faulty": {
+      "precision": 0.888468809073724,
+      "recall": 1.0,
+      "f1-score": 0.9409409409409409,
+      "support": 940.0
+    },
+    "healthy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 118.0
+    },
+    "accuracy": 0.888468809073724,
+    "macro avg": {
+      "precision": 0.444234404536862,
+      "recall": 0.5,
+      "f1-score": 0.47047047047047047,
+      "support": 1058.0
+    },
+    "weighted avg": {
+      "precision": 0.7893768246968815,
+      "recall": 0.888468809073724,
+      "f1-score": 0.835996677206507,
+      "support": 1058.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      940,
+      0
+    ],
+    [
+      118,
+      0
+    ]
+  ],
+  "top_feature_importances": [
+    {
+      "feature": "thermal_temp_channel_1_c_min",
+      "importance": 0.04293868555449824
+    },
+    {
+      "feature": "thermal_temp_channel_2_c_min",
+      "importance": 0.04075281349378006
+    },
+    {
+      "feature": "thermal_t_max_start",
+      "importance": 0.03527998122720804
+    },
+    {
+      "feature": "thermal_temp_channel_2_c_mean",
+      "importance": 0.0314647465254762
+    },
+    {
+      "feature": "thermal_temp_channel_2_c_start",
+      "importance": 0.030574867726453802
+    },
+    {
+      "feature": "vibration_vibration_point_1_g_kurtosis",
+      "importance": 0.030400894786984333
+    },
+    {
+      "feature": "thermal_t_max_end",
+      "importance": 0.028752070347225534
+    },
+    {
+      "feature": "thermal_temp_channel_1_c_max",
+      "importance": 0.028394213064098242
+    },
+    {
+      "feature": "thermal_t_mean_max",
+      "importance": 0.02803829173499162
+    },
+    {
+      "feature": "thermal_temp_channel_1_c_start",
+      "importance": 0.0275322971003215
+    },
+    {
+      "feature": "vibration_vibration_point_3_g_spec_entropy",
+      "importance": 0.026901378097665733
+    },
+    {
+      "feature": "vibration_vibration_point_4_g_std",
+      "importance": 0.026324235464025358
+    },
+    {
+      "feature": "vibration_vibration_point_1_g_shape_factor",
+      "importance": 0.02465754138957014
+    },
+    {
+      "feature": "thermal_t_max_min",
+      "importance": 0.023925010030276254
+    },
+    {
+      "feature": "thermal_t_mean_end",
+      "importance": 0.023596140193489813
+    },
+    {
+      "feature": "thermal_temp_channel_2_c_max",
+      "importance": 0.02301760454577483
+    },
+    {
+      "feature": "vibration_vibration_point_4_g_rms",
+      "importance": 0.021964580290685452
+    },
+    {
+      "feature": "thermal_temp_channel_2_c_end",
+      "importance": 0.02163456698064063
+    },
+    {
+      "feature": "thermal_t_mean_min",
+      "importance": 0.021251893956304738
+    },
+    {
+      "feature": "vibration_vibration_point_1_g_spec_entropy",
+      "importance": 0.020682651531312483
+    }
+  ],
+  "roc_auc": 0.39555084745762714,
+  "pr_auc": 0.8655214322872207,
+  "roc_auc_positive_label": "faulty",
+  "pr_auc_positive_label": "faulty"
+}

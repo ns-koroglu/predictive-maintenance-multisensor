@@ -1,0 +1,2 @@
+session_id,reference_mode,reference_file_count,session_file_count,reference_fraction_of_run,reference_start_index,reference_end_index,reference_start_hour,reference_end_hour,evaluation_file_count
+kaist_rtf_vibration_bearing_runtofailure,first_24_hours,24,129,0.18604651162790697,0,23,0.0,23.0,105

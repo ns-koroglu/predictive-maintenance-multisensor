@@ -1,0 +1,9 @@
+{
+  "session_id": "session_2026_04_01_run_01",
+  "label": "healthy",
+  "rpm": 1200,
+  "load_level": 0.25,
+  "ambient_temp_c": 24.0,
+  "lubrication_state": "normal",
+  "notes": "Example metadata template for one experimental session."
+}

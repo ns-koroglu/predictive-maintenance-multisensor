@@ -1,0 +1,33 @@
+experiment_name: paderborn_baseline_experiment
+
+dataset:
+  name: paderborn
+  variant: compact_multirate_snapshot
+  group_column: group_id
+  label_column: label
+  multiclass_label_column: multiclass_label
+
+paths:
+  data_root: data/external/paderborn/extracted
+  processed_root: data/processed
+  results_root: results
+  feature_dataset_path: data/processed/paderborn/datasets/paderborn_compact_feature_dataset.csv
+
+model:
+  classifier:
+    n_estimators: 300
+    random_state: 42
+    max_depth: null
+    min_samples_leaf: 1
+    n_jobs: -1
+    class_weight: balanced
+    balance_strategy: none
+    balance_target_ratio: 1.0
+
+evaluation:
+  healthy_label: healthy
+  test_fraction: 0.25
+  random_state: 42
+  split_strategy: group
+  positive_labels:
+    - faulty

@@ -1,0 +1,3 @@
+model_name,n_reference_files,n_reference_sessions,calibration_strategy,calibrated_threshold,healthy_score_mean,healthy_score_std,healthy_score_q95,healthy_score_q99,sessions_with_alarm
+isolation_forest,1780,12,quantile,0.6397457724095896,0.43990772816402446,0.0615509749457852,0.5436995703957705,0.5781947974638044,4
+one_class_svm,1780,12,quantile,2.2447554041262654,-1.2075492220347002,0.9516302215858403,2.017743017748135e-05,1.293125182540425,12

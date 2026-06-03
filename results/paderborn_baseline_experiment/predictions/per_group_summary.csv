@@ -1,0 +1,9 @@
+group_id,split_group,true_label,n_sessions,majority_predicted_label,predicted_faulty_ratio,mean_faulty_probability,max_faulty_probability
+paderborn_K001,paderborn_K001,healthy,80,faulty,0.725,0.6097083333333333,0.8766666666666667
+paderborn_K006,paderborn_K006,healthy,80,faulty,0.5375,0.4654166666666667,0.8933333333333333
+paderborn_KA16,paderborn_KA16,faulty,80,faulty,1.0,1.0,1.0
+paderborn_KA30,paderborn_KA30,faulty,80,faulty,0.9625,0.8858750000000001,0.9666666666666667
+paderborn_KI04,paderborn_KI04,faulty,80,faulty,0.7625,0.8052916666666666,0.98
+paderborn_KI05,paderborn_KI05,faulty,80,healthy,0.1625,0.3399166666666667,0.7133333333333334
+paderborn_KI08,paderborn_KI08,faulty,80,faulty,1.0,0.9553750000000001,0.9966666666666667
+paderborn_KI14,paderborn_KI14,faulty,80,faulty,1.0,0.9739166666666665,1.0

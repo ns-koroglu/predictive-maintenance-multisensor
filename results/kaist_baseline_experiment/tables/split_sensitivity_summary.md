@@ -1,0 +1,13 @@
+| metric | mean | std | min | max |
+| --- | --- | --- | --- | --- |
+| classifier_accuracy | 0.8356 | 0.0700 | 0.7367 | 0.8885 |
+| classifier_balanced_accuracy | 0.4950 | 0.0070 | 0.4851 | 0.5000 |
+| classifier_macro_f1 | 0.4544 | 0.0214 | 0.4242 | 0.4705 |
+| isolation_forest_balanced_accuracy | 0.4062 | 0.0228 | 0.3782 | 0.4340 |
+| isolation_forest_f1 | 0.7156 | 0.1329 | 0.5463 | 0.8709 |
+| isolation_forest_recommended_balanced_accuracy | 0.5836 | 0.0525 | 0.5368 | 0.6569 |
+| isolation_forest_recommended_f1 | 0.3390 | 0.1371 | 0.1795 | 0.5143 |
+| one_class_svm_balanced_accuracy | 0.4610 | 0.0236 | 0.4388 | 0.4938 |
+| one_class_svm_f1 | 0.8732 | 0.0484 | 0.8125 | 0.9309 |
+| one_class_svm_recommended_balanced_accuracy | 0.6974 | 0.1402 | 0.5000 | 0.8117 |
+| one_class_svm_recommended_f1 | 0.7896 | 0.0535 | 0.7377 | 0.8632 |

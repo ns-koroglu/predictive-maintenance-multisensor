@@ -1,0 +1,13 @@
+group_id,session_id,bearing_id,run_key,reference_mode,reference_file_count,session_file_count,reference_fraction_of_session,reference_start_index,reference_end_index,reference_start_hour,reference_end_hour,evaluation_file_count,documented_failure_mode,documented_failed_bearing,documented_failure_metadata_confidence
+nasa_ims_1st_test,nasa_ims_1st_test_bearing_1,1,1st_test,first_24_hours,156,2156,0.07235621521335807,0,155,0.0,22.130277777777778,2000,,False,documented
+nasa_ims_1st_test,nasa_ims_1st_test_bearing_2,2,1st_test,first_24_hours,156,2156,0.07235621521335807,0,155,0.0,22.130277777777778,2000,,False,documented
+nasa_ims_1st_test,nasa_ims_1st_test_bearing_3,3,1st_test,first_24_hours,156,2156,0.07235621521335807,0,155,0.0,22.130277777777778,2000,inner_race_defect,True,documented
+nasa_ims_1st_test,nasa_ims_1st_test_bearing_4,4,1st_test,first_24_hours,156,2156,0.07235621521335807,0,155,0.0,22.130277777777778,2000,roller_element_defect,True,documented
+nasa_ims_2nd_test,nasa_ims_2nd_test_bearing_1,1,2nd_test,first_24_hours,144,984,0.14634146341463414,0,143,0.0,23.83333333333333,840,outer_race_failure,True,documented
+nasa_ims_2nd_test,nasa_ims_2nd_test_bearing_2,2,2nd_test,first_24_hours,144,984,0.14634146341463414,0,143,0.0,23.83333333333333,840,,False,documented
+nasa_ims_2nd_test,nasa_ims_2nd_test_bearing_3,3,2nd_test,first_24_hours,144,984,0.14634146341463414,0,143,0.0,23.83333333333333,840,,False,documented
+nasa_ims_2nd_test,nasa_ims_2nd_test_bearing_4,4,2nd_test,first_24_hours,144,984,0.14634146341463414,0,143,0.0,23.83333333333333,840,,False,documented
+nasa_ims_3rd_test__4th_test__txt,nasa_ims_3rd_test__4th_test__txt_bearing_1,1,3rd_test__4th_test__txt,first_24_hours,145,6324,0.022928526249209363,0,144,0.0,23.916666666666668,6179,,,uncertain_local_layout
+nasa_ims_3rd_test__4th_test__txt,nasa_ims_3rd_test__4th_test__txt_bearing_2,2,3rd_test__4th_test__txt,first_24_hours,145,6324,0.022928526249209363,0,144,0.0,23.916666666666668,6179,,,uncertain_local_layout
+nasa_ims_3rd_test__4th_test__txt,nasa_ims_3rd_test__4th_test__txt_bearing_3,3,3rd_test__4th_test__txt,first_24_hours,145,6324,0.022928526249209363,0,144,0.0,23.916666666666668,6179,,,uncertain_local_layout
+nasa_ims_3rd_test__4th_test__txt,nasa_ims_3rd_test__4th_test__txt_bearing_4,4,3rd_test__4th_test__txt,first_24_hours,145,6324,0.022928526249209363,0,144,0.0,23.916666666666668,6179,,,uncertain_local_layout

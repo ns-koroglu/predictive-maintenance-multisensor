@@ -1,0 +1,3 @@
+model_name,n_reference_files,calibration_strategy,calibrated_threshold,healthy_score_mean,healthy_score_std,healthy_score_q95,healthy_score_q99,first_alarm_index,first_alarm_hour,first_alarm_reason,status
+isolation_forest,24,quantile,0.7114771439884089,0.4670738938031909,0.06268051598245952,0.5607144469253914,0.6487966280059494,,,no_alarm,no_alarm_detected
+one_class_svm,24,quantile,0.022606025537841183,-0.01659298449425668,0.022146113758616272,0.0003791234447261189,0.0004599117792249121,26.0,26.0,sustained_warning,alarm_detected
