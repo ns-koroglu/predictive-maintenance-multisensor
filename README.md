@@ -17,7 +17,6 @@ Bu proje, çoklu sensörlü kestirimci bakım için erken arıza uyarısı ve an
 
 | Klasör | İçerik |
 |---|---|
-| `report/` | MTU-I final Markdown raporu, uygunluk kontrol listesi ve mevcut advisor-facing DOCX çıktısı |
 | `source/` | Proje kaynak kodu ve testler |
 | `configs/` | Deney ve adapter YAML konfigürasyonları |
 | `docs/` | Tezi destekleyen temiz teknik dokümantasyon ve adapter spesifikasyonları |
