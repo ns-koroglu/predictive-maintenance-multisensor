@@ -1,5 +1,3 @@
-# MTU-I Proje Teslim Paketi
-
 ## Proje Başlığı
 
 Çoklu Sensörlü Kestirimci Bakımda Anomaly-First ve Leakage-Aware Değerlendirme Altyapısı
